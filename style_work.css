@@ -1,0 +1,316 @@
+body {
+	font-size: 16px;
+	font-family: Karla;
+	color: rgb(0,0,255); 
+	line-height: 1.5;
+	margin:0 auto;	
+	border-left: .7em solid rgb(0,0,255);
+    border-right: .7em solid rgb(0,0,255); 
+    border-bottom: .7em solid rgb(0,0,255);	
+    position: relative;
+    z-index: 4;
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    z-index: 4;
+    background: rgb(0,0,255);
+    left: 0;
+    right: 0;
+    height: .7em;
+}
+
+nav {
+    position: center; 
+    text-align: center; 
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+
+ul {
+	list-style-type: none;
+	color: white;  
+	font-size: 1em;
+	line-height: 1.5;
+	margin-right: 50px;
+    margin-left: 300px; 
+    padding-bottom: 20px;
+}
+
+h1 {
+	font-family: SkyhookMono;
+	font-size: 24px; 
+	font-weight: bolder;
+	padding-top: 15px; 
+	margin:0 auto;  
+	max-width:960px; 
+	text-align: left;
+}
+
+h2	{
+	font-size: 14px; 
+	font-weight: normal;
+	margin-left: 145px;
+	padding-top: 15px;
+    }
+
+p { 
+	font-size: 24px;
+	margin:0 auto;  
+	max-width:960px; 
+	text-align: center;  
+}
+
+.SkyhookMono-bold-normal { 
+	font-family: SkyhookMono;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.header {
+	text-align: center;
+	margin:0 auto;
+	max-width:960px;
+	height: 300px;
+}
+
+.footer {
+	font-family: SkyhookMono;
+	font-size: .8em;
+	margin:0 auto;
+	max-width:960px;
+	text-align: center;
+	padding-bottom: 25px;
+	padding-top: 40px;
+}
+
+.about { 
+	margin:0 auto; 
+	max-width:960px;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+
+li{
+  margin: 10px 0;
+}
+
+.nav_button {
+	position:fixed;
+	width:100px;
+	font-weight: normal;
+	color: rgb(0,0,255); 
+	font-size: 1.3em; 
+	letter-spacing: 2px; 
+	display: inline-block;
+	text-decoration: none;
+	width:20px;
+	top:5%;
+	left:3%;
+}
+
+.nav_button_2 {
+	position:fixed;
+	width:100px;
+	font-weight: normal; 
+	color: rgb(0,0,255);  
+	font-size: 1.3em;  
+	letter-spacing: 2px;
+	display: inline-block;
+	text-decoration: none;
+	width:20px;
+	right: 6%;
+	top:5%;
+}
+
+.nav_button_3 {
+	position:fixed;
+	width:100px;
+	font-weight: normal;
+	color: rgb(0,0,255); 
+	font-size: 1.3em;  
+	letter-spacing: 2px;
+	display: inline-block;
+	text-decoration: none;
+	width:20px;
+	left:3%;
+	top: 92%;
+}
+
+.nav_button_4 { 
+	font-size: 1.1em; 
+	color: rgb(0,0,255); 
+	letter-spacing: 2px;
+	display: inline-block;
+	text-decoration: none;
+	padding-top:4%;	
+}
+
+.nav_button_4:hover {
+	text-decoration: underline;
+}
+
+.nav_button_5 {
+	font-size: 1.1em;
+	color: rgb(0,0,255);   
+	letter-spacing: 2px; 
+	display: inline-block;
+	text-decoration: none;
+	padding-top:4%;
+	padding-left: 15px; 
+	white-space:nowrap;
+	text-align: center;  
+}
+
+.nav_button_5:hover {
+	text-decoration: underline;
+}
+
+.side_social{
+	position:fixed;
+	width:20px;
+	top:50%;
+	left:2%;
+	right: 20%;
+	padding:15px 0; 
+	display: inline-block;
+}
+
+.side_social_2 {
+	position:fixed;
+	width:20px;
+	top:50%;
+	left:95%;
+	right: 4%;
+	padding:15px 0; 
+	display: inline-block;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.gallery {
+	margin: 0 auto;
+   	max-width: 960px;
+  	position: relative;
+  	padding-top: 40px; 
+}
+
+.gallerycel {
+	position: relative;
+	width: 450px; 
+	height: 350px;
+	display: inline-block;
+	padding: 2px;
+}
+
+.projectlink {
+	position: relative;
+	width: 450px; 
+	height: 300px;
+}
+
+.projectlink,
+.projectlinkhover {
+	position: absolute;
+	width: 450px; 
+}
+
+.gallerycel .projectlinkhover {
+	opacity: 0;
+	z-index: 1;
+	/*transition-property: opacity;*/
+	transition-duration: 1sec;
+}	
+
+.gallerycel .projectlinkhover:hover {
+	opacity: 1;
+	transition-duration: 1sec;
+}
+
+/******************************************
+/* CAROUSEL
+/*******************************************/
+
+.carousel { 
+	margin-top: 9%;
+	margin-bottom: 9%;
+    max-width: 960px;
+    /*overflow: auto;*/
+    position: relative;
+    text-align: center;  
+}
+
+.carouselleft {
+	position:absolute;
+	text-align: center;
+	width:50%;
+	height:100%;
+	left:0;
+	top:0;
+}
+
+.carouselright {
+	position:absolute;
+	text-align: center;
+	width:50%;
+	height:100%;
+	right:0;
+	top:0;"
+	
+}
+
+#carouseltext {
+	display:none;
+	margin-top: 9%;
+	margin-bottom: 9%;
+    max-width: 450px;
+    /*overflow: auto;*/
+    position: relative;
+    text-align: center;
+}
+
+/******************************************
+/* RESPONSIVE
+/*******************************************/
+
+@media (max-width: 768px) {
+
+    .gallerycel,
+    .projectlink,
+	.projectlinkhover {
+        width: 100%;                
+        vertical-align: top;
+      	position: center;
+        display: inline-block;
+    }
+
+	.footer {
+		max-width: 25%;
+
+
+	}
+/*
+	.footer {
+	font-family: SkyhookMono;
+	font-size: .8em;
+	margin:0 auto;
+	max-width:960px;
+	text-align: center;
+	padding-bottom: 25px;
+	padding-top: 40px;*/
+} 
+
+
+     
